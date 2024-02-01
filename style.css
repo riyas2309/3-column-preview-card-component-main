@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d5e2f0ff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+p {
+  font-family: "Cabin", sans-serif;
+}
+.container {
+  width: 70%;
+  border-radius: 2vh;
+  display: flex;
+  height: 29rem;
+}
+.container1,
+.container2,
+.container3 {
+  width: 33%;
+  background: #e38424ff;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 2.5rem;
+  color: #fff;
+}
+.container1 h3,
+.container2 h3,
+.container3 h3 {
+  letter-spacing: 0.25rem;
+  font-size: 3rem;
+  font-weight: 10;
+  padding: 1rem 0;
+}
+.container1 p,
+.container2 p,
+.container3 p {
+  margin-right: 3.5rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #ffdb9cff;
+}
+.container1 button,
+.container2 button,
+.container3 button {
+  width: 8rem;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 5rem;
+  color: #e38424ff;
+  font-weight: 600;
+}
+.container2 {
+  border-radius: 0;
+  background: #016973ff;
+}
+.container2 p {
+  color: #87d1d6ff;
+}
+.container2 button {
+  color: #498185ff;
+}
+.container3 {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: #00403fff;
+}
+.container3 p {
+  color: #99c6c7ff;
+}
+.container3 button {
+  color: #375354ff;
+}
+.container1 button:hover {
+  cursor: pointer;
+  background: #e38424ff;
+  border: 3px solid #fff;
+  color: #fff;
+}
+.container2 button:hover {
+  cursor: pointer;
+  background: #016973ff;
+  border: 3px solid #fff;
+  color: #fff;
+}
+.container3 button:hover {
+  cursor: pointer;
+  background: #00403fff;
+  border: 3px solid #fff;
+  color: #fff;
+}
+@media screen and (min-width: 321px) and (max-width: 960px) {
+  html,
+  body {
+    overflow-x: scroll;
+  }
+  body {
+    margin-bottom: 5rem;
+    margin-top: 5rem; /* Adjust the value as needed */
+  }
+  .container {
+    display: block;
+    height: 100%;
+  }
+  .container1,
+  .container2,
+  .container3 {
+    width: 100%;
+  }
+  .container1 {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .container3 {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
